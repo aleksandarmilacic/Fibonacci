@@ -1,0 +1,5 @@
+In this example, we calculate the nth number in the Fibonacci sequence using a recursive approach. However, to optimize performance, we introduce memoization by caching previously calculated Fibonacci numbers in the fibCache dictionary.
+
+The Fibonacci method takes an integer n as input and returns the nth Fibonacci number. It first checks if the result for the given n is already present in the cache (fibCache). If it is, it directly returns the cached value. Otherwise, it calculates the Fibonacci number recursively by adding the two previous Fibonacci numbers (Fibonacci(n - 1) and Fibonacci(n - 2)) and stores the result in the cache before returning it.
+
+In the Main method, we specify the value of n (in this case, 50) and call the Fibonacci method to calculate the corresponding Fibonacci number. The result is then displayed on the console.
